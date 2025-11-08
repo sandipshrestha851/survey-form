@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 id="title">Coding Survey Form</h1>
+            <p id="description"><i>Thank you for sharing your experience with us</i></p>
+        </div>
+        <fieldset>
+            <form id="survey-form">
+                <label id="name-label">Name
+                    <input id="name" type="text" placeholder="Enter your name" class="placeholder" required />
+                </label>
+                <label id="email-label">Email
+                    <input id="email" type="email" placeholder="Enter your email" class="placeholder" required />
+                </label>
+                <label id="number-label">Age (optional)
+                    <input value="age" id="number" type="number" min=10 max=65 placeholder="Enter your age" class="placeholder" />
+                </label>
+
+                <label>What is your country of residence ?
+                    <select id="dropdown">
+                        <option class="placeholder">Select an option</option>
+                        <option value="USA" class="placeholder">USA</option>
+                        <option value="australia" class="placeholder">Australia</option>
+                        <option value="India" class="placeholder">India</option>
+                        <option value="Russia" class="placeholder">Russia</option>
+                        <option value="Other" class="placeholder">Other</option>
+                    </select>
+                </label>
+
+                <div class="return">
+                    <legend>Would you ever return to our country ?</legend>
+
+                    <label>
+                        <input value="Ofcourse" type="radio" name="preference" class="inline" />
+                        Ofcourse</label>
+                    <label>
+                        <input value="Maybe" type="radio" name="preference" class="inline" />
+                        Maybe</label>
+                    <label>
+                        <input value="Not sure" type="radio" name="preference" class="inline" class="inline" />
+                        Not sure</label>
+                </div>
+
+                <div class="visit-purpose">
+                    <legend>What was the purpose of your visit ?</legend>
+                    <label>
+                        <input  type="checkbox" value="leisure" class="inline" />
+                    Leisure</label>
+                    <label>
+                        <input type="checkbox" value="Business" class="inline" />
+                    Business</label>
+                    <label>
+                        <input type="checkbox" value="Family visit" class="inline" />
+                    Family Visit</label>
+                    <label>
+                        <input type="checkbox" value="Adventure" class="inline" />
+                    Adventure</label>
+                    <label>
+                        <input type="checkbox" value="Other" class="inline" />
+                    Other</label>
+                </div>
+
+                <div class="feedback">
+                    <label>Feedback:
+                        <textarea placeholder="Enter your comment here..." class="placeholder"></textarea>
+                    </label>
+                </div>
+
+                <label class="submit">
+                    <input type="submit" value="Submit" id="submit" />
+                </label>
+
+
+            </form>
+        </fieldset>
+    </div>
+</body>
+
+</html>
